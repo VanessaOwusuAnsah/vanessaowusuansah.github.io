@@ -8,6 +8,10 @@
   <script>try{var savedTheme=localStorage.getItem('voa-theme');var initialTheme=savedTheme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',initialTheme)}catch(e){}</script>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Keep the highlighted “Quant” word legible on the burgundy hero in both themes. */
+    .qb-page-hero .quant-wordmark span { color: #f2bed1; }
+  </style>
 </head>
 <body>
   <header class="masthead">
@@ -100,13 +104,19 @@
         <section class="research-group" aria-labelledby="under-review-heading">
           <div class="research-group-heading">
             <span>01</span>
-            <h3 id="under-review-heading">Manuscript under review</h3>
+            <h3 id="under-review-heading">Manuscripts under review</h3>
           </div>
           <article class="publication-card publication-card-featured">
             <span class="publication-badge">Under review · PLOS ONE</span>
             <h4>Barriers and Costs to Accessing Maternity Care in England for Pregnant Women Living on Low Income: A Multi-Methods Study</h4>
             <p class="publication-authors">Brennan-Tovey, K., Sarma, K., Lima, D., Ayorinde, A., Brown, H., <strong>Owusu Ansah, V.</strong>, Esan, O. B., Gardiner, D., Kipping, R., Thompson, C., Heslehurst, N., Aquino, M. R. J., and Rankin, J.</p>
             <p class="publication-venue">Under review at <em>PLOS ONE</em>.</p>
+          </article>
+          <article class="publication-card publication-card-featured">
+            <span class="publication-badge">Under review · Gynecology and Obstetrics Clinical Medicine</span>
+            <h4>Cost-effectiveness of Universal Free Vitamin Supplementation in Pregnancy in England: A Multi-Stage Decision Tree and Value of Information Analysis</h4>
+            <p class="publication-authors">With Heather Brown, Laura Heathcote, Eleanor Dyer, Kiya Hurley, Nicola Heslehurst, Zainab Akhter, Kate Jolly, Giang T Nguyen, Judith Rankin, Catherine Jackson, and Stephanie Scott.</p>
+            <p class="publication-venue">Under review at <em>Gynecology and Obstetrics Clinical Medicine</em>.</p>
           </article>
         </section>
 
@@ -130,25 +140,13 @@
             <article class="wip-card">
               <span class="wip-number">02</span>
               <div>
-                <h4>Cost-effectiveness of Universal Free Vitamin Supplementation in Pregnancy in England: A Multi-Stage Decision Tree and Value of Information Analysis</h4>
-                <p class="wip-collaborators">With Heather Brown, Laura Heathcote, Eleanor Dyer, Kiya Hurley, Nicola Heslehurst, Zainab Akhter, Kate Jolly, Giang T Nguyen, Judith Rankin, Catherine Jackson, Stephanie Scott</p>
-                <div class="publication-actions" aria-label="Details for Food, Pregnancy and Me">
+                <h4>The Sibling Dividend: Free Senior High School and Intrahousehold Human Capital Spillovers in Ghana</h4>
+                <p class="wip-collaborators">With Kingsford Onyina and Danny Turkson.</p>
+                <div class="publication-actions" aria-label="Details for The Sibling Dividend">
                   <button data-research-toggle="abstract" data-target="research-detail-02" aria-expanded="false" aria-controls="research-detail-02">Show abstract</button>
                   <button data-research-toggle="version" data-target="research-detail-02" aria-expanded="false" aria-controls="research-detail-02">View latest version</button>
                 </div>
                 <div class="publication-detail" id="research-detail-02" hidden aria-live="polite"><p></p></div>
-              </div>
-            </article>
-            <article class="wip-card">
-              <span class="wip-number">03</span>
-              <div>
-                <h4>The Sibling Dividend: Free Senior High School and Intrahousehold Human Capital Spillovers in Ghana</h4>
-                <p class="wip-collaborators">With Kingsford Onyina and Danny Turkson.</p>
-                <div class="publication-actions" aria-label="Details for The Sibling Dividend">
-                  <button data-research-toggle="abstract" data-target="research-detail-03" aria-expanded="false" aria-controls="research-detail-03">Show abstract</button>
-                  <button data-research-toggle="version" data-target="research-detail-03" aria-expanded="false" aria-controls="research-detail-03">View latest version</button>
-                </div>
-                <div class="publication-detail" id="research-detail-03" hidden aria-live="polite"><p></p></div>
               </div>
             </article>
           </div>
@@ -201,7 +199,7 @@
 
         <section class="qb-overview">
           <p>QuantBridge is an initiative I co-founded with <a href="https://kingsfordonyina.github.io/" target="_blank" rel="noreferrer">Kingsford Onyina</a> of UNC Charlotte and <a href="https://dannyturkson.github.io/" target="_blank" rel="noreferrer">Danny Turkson</a> of UNC Chapel Hill. Together, we connect early-career researchers to applied quantitative training, opportunities to present research, and resources for professional development.</p>
-          <span class="qb-deadline">Fall 2026 Call for Papers · Deadline 23 August 2026</span>
+          <span class="qb-deadline">Fall 2026 begins soon · Join our community for session updates</span>
         </section>
 
         <div class="qb-stats">
@@ -213,10 +211,9 @@
         <p class="qb-join"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeAtBl-ScvYNw59PzQh9lruERhsH3cOwevR3xHHWDN593XR3w/viewform" target="_blank" rel="noreferrer">Be part of the QuantBridge community <span>→</span></a></p>
 
         <section class="qb-callout">
-          <p class="eyebrow">Fall 2026</p><h2>Call for Papers</h2>
-          <p>Master’s and doctoral students, postdoctoral researchers, and scholars on the academic job market were invited to present applied quantitative research in public policy, economics, sociology, and related social-science fields during the Fall 2026 series.</p>
-          <p><strong>Submission deadline:</strong> 23 August 2026.</p>
-          <a href="https://dannyturkson.github.io/assets/call_for_papers.pdf" target="_blank" rel="noreferrer">View submission instructions →</a>
+          <p class="eyebrow">Fall 2026</p><h2>New sessions begin soon</h2>
+          <p>Our Fall 2026 programme begins soon. Join the QuantBridge community to be notified about upcoming quantitative-training, research-presentation, and capacity-development sessions.</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAtBl-ScvYNw59PzQh9lruERhsH3cOwevR3xHHWDN593XR3w/viewform" target="_blank" rel="noreferrer">Join the community →</a>
         </section>
 
         <section class="qb-section">
@@ -237,7 +234,7 @@
           </div>
           <div class="qb-phase">
             <p class="qb-phase-label">Phase II · July–August 2026</p>
-            <article class="qb-session"><h3>Session 3 · Instrumental Variables</h3><p class="qb-when">Theory and application: Friday, July 24 · 6:00 PM ET</p><p>Facilitator: <a href="https://cbeh.centre.uq.edu.au/profile/473/isaac-koomson" target="_blank" rel="noreferrer">Dr. Isaac Koomson</a>, The University of Queensland</p></article>
+            <article class="qb-session"><h3>Session 3 · Instrumental Variables</h3><p class="qb-when">Theory and application: Friday, July 24 · 6:00 PM ET</p><p>Facilitator: <a href="https://cbeh.centre.uq.edu.au/profile/473/isaac-koomson" target="_blank" rel="noreferrer">Dr. Isaac Koomson</a>, The University of Queensland</p><a class="qb-material" href="https://www.youtube.com/watch?v=eJX1TfBZTao" target="_blank" rel="noreferrer">Watch the theory and application recording →</a></article>
             <article class="qb-session"><h3>Session 4 · Publishing in High-Impact Journals</h3><p class="qb-when">Friday, July 31 · 1:00 PM ET</p><p>Facilitator: <a href="https://www.jessicaleight.com/" target="_blank" rel="noreferrer">Dr. Jessica Leight</a>, International Food Policy Research Institute</p></article>
             <article class="qb-session"><h3>Session 5 · Regression Discontinuity Design</h3><p class="qb-when">Theory and application: Friday, August 7 · 12:00 PM ET</p><p>Facilitator: <a href="https://sites.google.com/site/samuelkwabenaobengprofilehome/home" target="_blank" rel="noreferrer">Dr. Samuel Kwabena Obeng</a>, University of Warwick</p></article>
           </div>
@@ -249,6 +246,7 @@
             <figure><div class="qb-frame"><iframe src="https://www.youtube.com/embed/gd83ryRqXV4" title="Introduction to Difference-in-Differences · Session 1" loading="lazy" allowfullscreen></iframe></div><figcaption>Introduction to Difference-in-Differences · Session 1</figcaption></figure>
             <figure><div class="qb-frame"><iframe src="https://www.youtube.com/embed/iJVZGWZQj1c" title="Staggered Difference-in-Differences · Session 2 Theory" loading="lazy" allowfullscreen></iframe></div><figcaption>Staggered Difference-in-Differences · Session 2 Theory</figcaption></figure>
             <figure><div class="qb-frame"><iframe src="https://www.youtube.com/embed/LfCr4N0yBtw" title="Staggered Difference-in-Differences · Session 2 Application" loading="lazy" allowfullscreen></iframe></div><figcaption>Staggered Difference-in-Differences · Session 2 Application</figcaption></figure>
+            <figure><div class="qb-frame"><iframe src="https://www.youtube.com/embed/eJX1TfBZTao" title="Instrumental Variables: Theory and Application (Stata) · Session 3" loading="lazy" allowfullscreen></iframe></div><figcaption>Instrumental Variables: Theory and Application (Stata) · Session 3</figcaption></figure>
             <figure><div class="qb-frame"><iframe src="https://www.youtube.com/embed/tKfeHR-Q4SA" title="Regression Discontinuity Design · Session 5" loading="lazy" allowfullscreen></iframe></div><figcaption>Regression Discontinuity Design · Session 5</figcaption></figure>
           </div>
         </section>
@@ -258,8 +256,6 @@
           <p>Join our community for news about quantitative training, research presentations, and professional-development opportunities.</p>
           <div class="qb-community-actions">
             <a class="qb-community-button" href="https://docs.google.com/forms/d/e/1FAIpQLSeAtBl-ScvYNw59PzQh9lruERhsH3cOwevR3xHHWDN593XR3w/viewform" target="_blank" rel="noreferrer">Join the community →</a>
-            <a href="https://kingsfordonyina.github.io/" target="_blank" rel="noreferrer">Visit Kingsford Onyina’s website ↗</a>
-            <a href="https://dannyturkson.github.io/" target="_blank" rel="noreferrer">Visit Danny Turkson’s website ↗</a>
           </div>
           <p class="qb-contact-email">Questions or collaboration enquiries: <a href="mailto:v.owusuansah@lancaster.ac.uk">v.owusuansah@lancaster.ac.uk</a></p>
         </section>
