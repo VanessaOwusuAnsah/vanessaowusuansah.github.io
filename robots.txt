@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vanessaowusuansah.github.io/sitemap.xml
