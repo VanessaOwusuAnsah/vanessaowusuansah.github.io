@@ -48,8 +48,8 @@
           </div>
           <h1>Vanessa Owusu Ansah</h1>
           <p class="voa2-subtitle">PhD Candidate in Economics · Lancaster University</p>
-          <p>I study how shocks, policies and economic opportunities shape the lives of vulnerable populations across generations.</p>
-          <p>My research lies at the intersection of <strong>development economics</strong>, <strong>gender</strong> and <strong>human capital</strong>, using microeconometrics and causal inference to produce evidence with people at its centre.</p>
+          <p>I am a PhD candidate in Economics at Lancaster University, where my research sits at the intersection of <strong>development economics</strong>, <strong>gender</strong>, and <strong>human capital</strong>.</p>
+          <p>My work examines how shocks and interventions shape the long-run outcomes of vulnerable populations, with a primary focus on Sub-Saharan Africa and, more recently, developed country contexts. I use the tools of microeconometrics and causal inference to generate rigorous evidence on questions I care deeply about: how historical crises echo across generations, how economic opportunities shape the lives of vulnerable populations, and how institutions designed to protect them actually affect their outcomes.</p>
           <blockquote class="voa2-quote">
             <span class="voa2-quote-mark" aria-hidden="true">“</span>
             <div>
@@ -256,7 +256,6 @@
   </main>
 
   <footer class="voa2-footer">© 2026 Vanessa Owusu Ansah · Lancaster, UK · Last updated October 2026</footer>
-  <div class="sr-only" id="voa2-live" aria-live="polite"></div>
 </div>
 
 <style>
@@ -1239,7 +1238,6 @@
 <script>
   (() => {
     const root = document.getElementById('voa-preview-kingsford');
-    const live = document.getElementById('voa2-live');
     const themeButton = document.getElementById('voa2-theme');
     const openPanel = (name) => {
       root.querySelectorAll('[data-voa2-tab]').forEach((control) => {
@@ -1250,7 +1248,6 @@
       root.querySelectorAll('.voa2-panel').forEach((panel) => {
         panel.hidden = panel.id !== `voa2-${name}-panel`;
       });
-      live.textContent = `${name.charAt(0).toUpperCase() + name.slice(1)} section opened`;
     };
     const panelNames = ['about', 'research', 'teaching', 'quantbridge', 'cv'];
     root.querySelectorAll('[data-voa2-tab]').forEach((control) => {
@@ -1285,7 +1282,6 @@
     themeButton.addEventListener('click', () => {
       const dark = root.classList.toggle('voa2-dark');
       themeButton.setAttribute('aria-label', dark ? 'Switch to day mode' : 'Switch to night mode');
-      live.textContent = dark ? 'Night mode enabled' : 'Day mode enabled';
     });
     const initialPanel = location.hash.slice(1);
     if (panelNames.includes(initialPanel)) openPanel(initialPanel);
