@@ -140,12 +140,12 @@
       <section class="voa2-list-section">
         <h3>Manuscripts under review and revision</h3>
         <article class="voa2-publication">
-          <div><span>01</span><small>PLOS ONE · Revise and resubmit</small></div>
+          <div><small>PLOS ONE · Revise and resubmit</small></div>
           <h4>Barriers and Costs to Accessing Maternity Care in England for Pregnant Women Living on Low Income: A Multi-Methods Study</h4>
           <p>Brennan-Tovey, K., Sarma, K., Lima, D., Ayorinde, A., Brown, H., <strong>Owusu Ansah, V.</strong>, Esan, O. B., Gardiner, D., Kipping, R., Thompson, C., Heslehurst, N., Aquino, M. R. J., and Rankin, J.</p>
         </article>
         <article class="voa2-publication">
-          <div><span>02</span><small>BMJ Public Health · Under review</small></div>
+          <div><small>BMJ Public Health · Under review</small></div>
           <h4>Cost-effectiveness of Universal Free Vitamin Supplementation in Pregnancy in England: A Multi-Stage Decision Tree and Value of Information Analysis</h4>
           <p>Heathcote, L., Dyer, E., Hurley, K., Heslehurst, N., Akhter, Z., Jolly, K., Nguyen, G. T., <strong>Owusu Ansah, V.</strong>, Rankin, J., Jackson, C., Scott, S., and Brown, H., on behalf of the Food, Pregnancy &amp; Me Collaboration.</p>
         </article>
@@ -153,26 +153,24 @@
       <section class="voa2-list-section">
         <h3>Research in progress</h3>
         <article class="voa2-project-row">
-          <span>01</span>
           <div>
             <h4>When Mothers Starved: Early-Life Famine Exposure and Child Health in Ghana</h4>
             <div class="voa2-publication-actions" aria-label="Details for When Mothers Starved">
               <button type="button" class="cursor-interaction" data-voa2-research-toggle="abstract" data-target="voa2-research-detail-01" aria-expanded="false" aria-controls="voa2-research-detail-01">Show abstract</button>
-              <button type="button" class="cursor-interaction" data-voa2-research-toggle="version" data-target="voa2-research-detail-01" aria-expanded="false" aria-controls="voa2-research-detail-01">View latest version</button>
+              <button type="button" class="cursor-interaction" data-voa2-research-toggle="version" data-target="voa2-research-detail-01" aria-expanded="false" aria-controls="voa2-research-detail-01">Read full draft</button>
             </div>
             <div class="voa2-publication-detail" id="voa2-research-detail-01" data-abstract="This paper examines whether women’s early-life exposure to Ghana’s 1981–1983 drought and famine crisis affected the health of their children. I use a quasi-experimental difference-in-differences design that exploits spatial variation in local drought intensity and temporal variation in whether the shock overlapped with a mother’s early-childhood developmental window. I find that maternal exposure to famine-linked drought at any point from in utero to age four reduced children’s height-for-age and increased the probability of being stunted. The intergenerational health penalty is strongest among mothers exposed during the first 1,000 days of life, highlighting the importance of early developmental windows. The mechanisms point less to maternal human capital as a pathway and more to lower engagement with preventive health care and weaker nutrition-related investments as potential pathways. These findings suggest that interventions protecting children during severe nutritional shocks may generate health benefits that extend across generations." hidden aria-live="polite"><p></p></div>
           </div>
         </article>
         <article class="voa2-project-row">
-          <span>02</span>
           <div>
             <h4>The Sibling Dividend: Free Senior High School and Intrahousehold Human Capital Spillovers in Ghana</h4>
             <p class="voa2-collaborators">With Kingsford Onyina and Danny Turkson.</p>
-            <div class="voa2-publication-actions" aria-label="Details for The Sibling Dividend">
-              <button type="button" class="cursor-interaction" data-voa2-research-toggle="abstract" data-target="voa2-research-detail-02" aria-expanded="false" aria-controls="voa2-research-detail-02">Show abstract</button>
-              <button type="button" class="cursor-interaction" data-voa2-research-toggle="version" data-target="voa2-research-detail-02" aria-expanded="false" aria-controls="voa2-research-detail-02">View latest version</button>
-            </div>
-            <div class="voa2-publication-detail" id="voa2-research-detail-02" hidden aria-live="polite"><p></p></div>
+          </div>
+        </article>
+        <article class="voa2-project-row">
+          <div>
+            <h4>Artisanal and Small Scale Mining, Labour Allocation and Gender Relations in Ghana</h4>
           </div>
         </article>
       </section>
@@ -301,6 +299,7 @@
     --v2-site-copy: #261b20;
     --v2-site-muted: #70656a;
     --v2-site-cream: #fbf6ef;
+    --v2-title: #111111;
     --v2-update-copy: #000000;
     --v2-quant-hero: #681936;
     --v2-quant-hero-ink: #ffffff;
@@ -341,9 +340,10 @@
     --v2-site-copy: #e8e6e3;
     --v2-site-muted: #9aa0a6;
     --v2-site-cream: #242124;
+    --v2-title: #ffffff;
     --v2-update-copy: #e8e6e3;
     --v2-quant-hero: #242124;
-    --v2-quant-hero-ink: #e8e6e3;
+    --v2-quant-hero-ink: #ffffff;
     --v2-social-ink: #1c1c1d;
     --v2-profile-border: rgba(255,255,255,.16);
   }
@@ -893,13 +893,12 @@
     padding: 21px 0 22px;
     border-bottom: 1px solid var(--v2-line);
     display: grid;
-    grid-template-columns: 140px minmax(0, 1fr);
-    column-gap: 25px;
+    grid-template-columns: 1fr;
+    gap: 7px;
   }
 
-  #voa-preview-kingsford .voa2-publication > div { grid-row: 1 / 3; }
-  #voa-preview-kingsford .voa2-publication > div span { display: block; color: var(--v2-plum); font-family: "Source Serif 4", serif; }
-  #voa-preview-kingsford .voa2-publication > div small { display: block; margin-top: 7px; color: var(--v2-muted); font-size: 11px; }
+  #voa-preview-kingsford .voa2-publication > div { grid-row: auto; }
+  #voa-preview-kingsford .voa2-publication > div small { display: block; color: var(--v2-muted); font-size: 11px; }
   #voa-preview-kingsford .voa2-publication h4 { margin: 0; font-size: 19px; font-weight: 500; line-height: 1.4; }
   #voa-preview-kingsford .voa2-publication > p { margin: 10px 0 0; color: var(--v2-muted); font-size: 13px; }
   #voa-preview-kingsford .voa2-publication > p strong { color: var(--v2-ink); font-weight: 500; }
@@ -911,6 +910,11 @@
     display: grid;
     grid-template-columns: 50px minmax(0, 1fr);
     gap: 18px;
+  }
+
+  #voa-preview-kingsford .voa2-project-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
   }
 
   #voa-preview-kingsford .voa2-project-row > span,
@@ -937,6 +941,14 @@
     color: var(--v2-plum);
     font-size: 12px;
     font-weight: 500;
+    cursor: pointer;
+    transition: background-color .18s ease, color .18s ease, transform .18s ease;
+  }
+
+  #voa-preview-kingsford .voa2-publication-actions button:hover {
+    background: var(--v2-plum);
+    color: var(--v2-on-plum);
+    transform: translateY(-1px);
   }
 
   #voa-preview-kingsford .voa2-publication-actions button.is-active {
@@ -970,14 +982,15 @@
   #voa-preview-kingsford .voa2-teaching-entry p { color: var(--v2-muted); }
   #voa-preview-kingsford .voa2-teaching-entry p { margin: 6px 0 0; }
 
-  #voa-preview-kingsford #voa2-research-panel .voa2-section-heading > p,
+  #voa-preview-kingsford #voa2-research-panel .voa2-section-heading > p {
+    color: var(--v2-site-plum);
+  }
+
   #voa-preview-kingsford #voa2-research-panel .voa2-section-heading h2,
   #voa-preview-kingsford #voa2-research-panel .voa2-list-section h3,
   #voa-preview-kingsford #voa2-research-panel .voa2-publication h4,
-  #voa-preview-kingsford #voa2-research-panel .voa2-project-row h4,
-  #voa-preview-kingsford #voa2-research-panel .voa2-publication > div span,
-  #voa-preview-kingsford #voa2-research-panel .voa2-project-row > span {
-    color: var(--v2-site-plum);
+  #voa-preview-kingsford #voa2-research-panel .voa2-project-row h4 {
+    color: var(--v2-title);
   }
 
   #voa-preview-kingsford #voa2-research-panel .voa2-section-heading > span,
@@ -1004,12 +1017,20 @@
     color: var(--v2-on-plum);
   }
 
+  #voa-preview-kingsford #voa2-research-panel .voa2-publication-actions button:hover {
+    background: var(--v2-site-plum);
+    color: var(--v2-on-plum);
+  }
+
   #voa-preview-kingsford #voa2-teaching-panel .voa2-section-heading > p,
+  #voa-preview-kingsford #voa2-teaching-panel .voa2-teaching-entry span {
+    color: var(--v2-site-plum);
+  }
+
   #voa-preview-kingsford #voa2-teaching-panel .voa2-section-heading h2,
-  #voa-preview-kingsford #voa2-teaching-panel .voa2-teaching-entry span,
   #voa-preview-kingsford #voa2-teaching-panel .voa2-teaching-entry h3,
   #voa-preview-kingsford #voa2-teaching-panel .voa2-teaching-entry h4 {
-    color: var(--v2-site-plum);
+    color: var(--v2-title);
   }
 
   #voa-preview-kingsford #voa2-teaching-panel .voa2-section-heading > span,
@@ -1089,9 +1110,12 @@
 
   #voa-preview-kingsford #voa2-quantbridge-panel .voa2-quant-intro > p a,
   #voa-preview-kingsford #voa2-quantbridge-panel .voa2-quant-stats strong,
-  #voa-preview-kingsford #voa2-quantbridge-panel .voa2-activities h4,
   #voa-preview-kingsford #voa2-quantbridge-panel .voa2-phase-label {
     color: var(--v2-site-plum);
+  }
+
+  #voa-preview-kingsford #voa2-quantbridge-panel .voa2-activities h4 {
+    color: var(--v2-title);
   }
 
   #voa-preview-kingsford #voa2-quantbridge-panel .voa2-quant-stats span {
@@ -1110,7 +1134,10 @@
   #voa-preview-kingsford .voa2-session { grid-template-columns: 75px minmax(0, 1fr) auto; }
   #voa-preview-kingsford .voa2-session > small { color: var(--v2-plum); font-size: 11px; font-weight: 500; }
 
-  #voa-preview-kingsford #voa2-quantbridge-panel .voa2-session h4,
+  #voa-preview-kingsford #voa2-quantbridge-panel .voa2-session h4 {
+    color: var(--v2-title);
+  }
+
   #voa-preview-kingsford #voa2-quantbridge-panel .voa2-session p {
     color: var(--v2-site-copy);
   }
@@ -1173,9 +1200,12 @@
   #voa-preview-kingsford .voa2-community small { display: block; margin-top: 11px; color: var(--v2-muted); font-size: 11px; }
   #voa-preview-kingsford .voa2-community > .voa2-primary-action { flex: none; }
 
-  #voa-preview-kingsford #voa2-quantbridge-panel .voa2-community h3,
   #voa-preview-kingsford #voa2-quantbridge-panel .voa2-community > div > span {
     color: var(--v2-site-plum);
+  }
+
+  #voa-preview-kingsford #voa2-quantbridge-panel .voa2-community h3 {
+    color: var(--v2-title);
   }
 
   #voa-preview-kingsford #voa2-quantbridge-panel .voa2-community p,
@@ -1367,7 +1397,7 @@
         history.replaceState(null, '', `#${name}`);
       });
     });
-    const draftNotice = 'Draft under preparation. The latest version will be uploaded soon.';
+    const draftNotice = 'Draft under preparation. The full draft will be available here soon.';
     root.querySelectorAll('[data-voa2-research-toggle]').forEach((button) => {
       button.addEventListener('click', () => {
         const detail = document.getElementById(button.dataset.target);
